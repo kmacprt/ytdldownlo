@@ -12,10 +12,10 @@ import typing
 import ffmpeg
 
 
-api_id = int(os.environ['API_ID'])
-api_hash = os.environ['API_HASH']
+api_id = int(os.environ['API_ID', '1733305'])
+api_hash = os.environ['API_HASH', 'f423cffca6b5b7247b31b5b0df61f48d']
 
-CHAT_WITH_BOT_ID = os.environ['CHAT_WITH_BOT_ID']
+CHAT_WITH_BOT_ID = os.environ['CHAT_WITH_BOT_ID', '1491937538:AAH-lvY4Vj3hsaJ4RtP85GcWnMoadknFL5Y']
 
 client = TelegramClient(StringSession(os.environ['CLIENT_SESSION']), api_id, api_hash)
 
